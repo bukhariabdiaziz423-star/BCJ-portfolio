@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BCJ | ICT Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #172338;
+      line-height: 1.7;
+    }
+
+    nav {
+      background: #153e75;
+      color: white;
+      padding: 18px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav h2 {
+      color: #42d6c9;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #42d6c9;
+    }
+
+    .hero {
+      min-height: 85vh;
+      padding: 80px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 45px;
+      flex-wrap: wrap;
+      background: linear-gradient(135deg, #f4f7fb, #dceaf8);
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 270px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 5vw, 60px);
+      line-height: 1.2;
+      margin: 15px 0;
+    }
+
+    .hero h1 span {
+      color: #078f91;
+    }
+
+    .hero p {
+      color: #5b6980;
+      margin-bottom: 25px;
+      max-width: 570px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #153e75;
+      color: white;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 8px;
+      margin: 5px 8px 5px 0;
+    }
+
+    .btn:hover {
+      background: #078f91;
+      transform: translateY(-2px);
+    }
+
+    .profile {
+      width: 270px;
+      height: 270px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #153e75, #11a6a0);
+      color: white;
+      display: grid;
+      place-items: center;
+      font-size: 65px;
+      font-weight: bold;
+      box-shadow: 0 20px 45px #153e752b;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 35px;
+    }
+
+    .about {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      color: #5b6980;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      padding: 25px;
+      border-radius: 14px;
+      background: white;
+      border: 1px solid #dbe4f0;
+      box-shadow: 0 8px 25px #153e750c;
+      transition: 0.25s;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #11a6a0;
+    }
+
+    .card h3 {
+      color: #153e75;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #5b6980;
+    }
+
+    .contact {
+      text-align: center;
+      background: #153e75;
+      color: white;
+    }
+
+    .contact p {
+      margin: 12px 0 20px;
+    }
+
+    .contact .btn {
+      background: #11a6a0;
+      color: #062d31;
+    }
+
+    footer {
+      padding: 22px;
+      text-align: center;
+      background: #102d54;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        justify-content: center;
+      }
+
+      nav a {
+        margin: 0 6px;
+      }
+
+      .hero {
+        text-align: center;
+        justify-content: center;
+        padding-top: 55px;
+      }
+
+      .profile {
+        width: 200px;
+        height: 200px;
+        font-size: 50px;
+      }
+
+      section {
+        padding: 55px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h2>BCJ.</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-text">
+      <p>WELCOME TO MY PORTFOLIO</p>
+      <h1>Hello, I'm <span>Bukhari.</span></h1>
+      <h2>ICT Student & Future Tech Professional</h2>
+      <p>
+        I am passionate about Web Development, Networking,
+        and Cybersecurity. I enjoy creating useful projects
+        and learning new technologies.
+      </p>
+      <a class="btn" href="#projects">View My Projects</a>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+    <div class="profile">BCJ</div>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+      <p>
+        My name is Bukhari Abdiaziz Jama Elmi. I am an ICT
+        student developing my knowledge in programming,
+        computer networking, web applications, and cybersecurity.
+        My goal is to build practical digital solutions and
+        continue growing as a technology professional.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">My Skills</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>💻 Web Development</h3>
+        <p>HTML, CSS, PHP, Laravel and responsive websites.</p>
+      </div>
+
+      <div class="card">
+        <h3>🌐 Networking</h3>
+        <p>IP addressing, routing, switching, VLANs and Packet Tracer.</p>
+      </div>
+
+      <div class="card">
+        <h3>🔐 Cybersecurity</h3>
+        <p>Security fundamentals, risk awareness and incident analysis.</p>
+      </div>
+
+      <div class="card">
+        <h3>⚙️ Programming</h3>
+        <p>Python, Dart, functions, loops and object-oriented programming.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>CRM System</h3>
+        <p>A Laravel application concept for managing customers,
+        contacts, sales and communication records.</p>
+      </div>
+
+      <div class="card">
+        <h3>Network Lab</h3>
+        <p>A small network using a router, switch, PCs and IP addressing
+        in Cisco Packet Tracer.</p>
+      </div>
+
+      <div class="card">
+        <h3>Cybersecurity Lab</h3>
+        <p>An educational exercise analyzing the impact of a fictional
+        cybersecurity incident.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+
+  <p>Have a project idea or want to connect about technology?</p>
+
+  <!-- Email -->
+  <a class="btn"
+     href="mailto:bukhariabdiaziz423@gmail.com">
+    📧 Email Me
+  </a>
+
+  <!-- Phone -->
+  <p>
+    📞 Tell:
+    <a href="tel:+252634976903" style="color: white;">
+      +252634976903
+    </a>
+  </p>
+
+  <!-- WhatsApp -->
+  <a class="btn"
+     href="https://wa.me/252634976903"
+     target="_blank"
+     rel="noopener noreferrer">
+    💬 WhatsApp Me
+  </a>
+</section>
+
+  <footer>
+    <p>© <span id="year"></span> BCJ Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
